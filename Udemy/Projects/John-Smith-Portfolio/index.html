@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Site</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mq.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <div id="header_links-container">
+            <span id="name">John Smith</span>
+
+            <input type="checkbox" name="menu-close-icons" id="menu-close-icons">
+
+            <label for="menu-close-icons">
+                <img id="menu" src="icons/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="">
+            </label>
+
+            <label for="menu-close-icons" id="overlay">
+
+            </label>
+
+            <ul class="header_links-container">
+                <label for="menu-close-icons">
+                    <img id="close" src="icons/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                </label>
+
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#grid-images">My Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="header_container">
+            <img src="project_resources/portrait-400pxX300px-scale.jpg" alt="An image of John Smith">
+
+            <div class="header_content">
+                <h1>Hey Friends!</h1>
+                <p>I'm John. I'm a <strong>Photographer</strong> and <strong>Instagram Creator</strong> with a passion for capturing moments that tell magical stories</p>
+
+                <div class="header_buttons">
+                    <a href="#" class="orange-button">Follow Me on Instagram</a>
+                    <a id="header_buttons-see-my-work" href="#grid-images">See my Work</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--end_of_header-->
+
+    <section id="section-about">
+        <div class="about-content">
+            <h2>How I can help you</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque qui unde possimus totam repellendus nobis repellat, minima, vel pariatur laborum non alias praesentium deserunt necessitatibus magnam doloribus cupiditate reprehenderit! Dicta, nam dolor vero incidunt nostrum ratione assumenda beatae ut!</p>
+        </div>
+
+        <img src="project_resources/undraw_product-photography_pouq.svg" width="325px" alt="A draw ilustrating how I work">
+    </section>
+
+    <!--end_of_section-about-->
+
+    <section id="my-work">
+        <h2>Some of my best pictures</h2>
+
+        <div class="pictures-grid">
+            <img style="grid-area: box-1;" src="project_resources/pexels-alef-morais-336305364-30684729.jpg" alt="">
+
+            <img style="grid-area: box-2;" src="project_resources/pexels-aleksey-kuprikov-1883853-3493777.jpg" alt="">
+
+            <img style="grid-area: box-3;" src="project_resources/pexels-chris-janda-12879-62600.jpg" alt="">
+
+            <img style="grid-area: box-4;" src="project_resources/pexels-frankdhill-1599899.jpg" alt="">
+
+            <img style="grid-area: box-5;" src="project_resources/pexels-tomas-anunziata-129267-3876394.jpg" alt="">
+        </div>
+
+        <a class="orange-button" href="#">More on my insta</a>
+    </section>
+
+    <!--end_of_my-work-->
+
+    <section id="common-questions">
+        <h2>Common Questions</h2>
+
+        <div id="questions-container">
+            <div class="questions-content">
+                <input type="checkbox" name="price" id="price">
+                <label for="price">
+                    <h3>How much does it cost?</h3>
+                </label>
+            
+                <div class="price text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error voluptate ipsum explicabo molestiae hic fugiat consequatur. Alias, fugit. Deserunt libero ipsum velit sapiente, consequuntur, expedita, qui odio odit quam repellat nisi eum quidem harum eius similique esse? Voluptatum officiis repellat reprehenderit mollitia dignissimos totam, voluptatibus ipsa fugit, doloribus, recusandae deserunt.</p>
+                </div>
+            </div>
+
+            <div class="questions-content">
+                <input type="checkbox" name="wedding" id="wedding">
+                <label for="wedding">
+                    <h3>Do you do weddings?</h3>
+                </label>
+            
+                <div class="wedding text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error voluptate ipsum explicabo molestiae hic fugiat consequatur. Alias, fugit. Deserunt libero ipsum velit sapiente, consequuntur, expedita, qui odio odit quam repellat nisi eum quidem harum eius similique esse? Voluptatum officiis repellat reprehenderit mollitia dignissimos totam, voluptatibus ipsa fugit, doloribus, recusandae deserunt.</p>
+                </div>
+            </div>
+
+            <div class="questions-content">
+                <input type="checkbox" name="contact" id="contact">
+                <label for="contact">
+                    <h3>How can I contact you?</h3>
+                </label>
+            
+                <div class="contact text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error voluptate ipsum explicabo molestiae hic fugiat consequatur. Alias, fugit. Deserunt libero ipsum velit sapiente, consequuntur, expedita, qui odio odit quam repellat nisi eum quidem harum eius similique esse? Voluptatum officiis repellat reprehenderit mollitia dignissimos totam, voluptatibus ipsa fugit, doloribus, recusandae deserunt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--end_of_common-questions-->
+
+    <section id="section-footer">
+        <span>LinkedIn</span>
+        <span>My Work</span>
+        <span>Contact</span>
+    </section>
+
+    <!--end_of_section-footer-->
+
+    <footer>
+        <p>Created by <a href="https://github.com/HenriqueYamada" target="_blank">Henrique Yuji Yamada</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+:root{
+    --accent-color: #d52c3a;
+    --primary-color: #1B1C1F;
+    --secondary-color: #101113;
+    --text-color: #d9d9d9;
+    --secondary-text-color: #7f8082;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+}
+
+body{
+    background-color: var(--primary-color);
+    height: 100vh;
+}
+
+/*---HEADER---*/
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-self: center;
+    text-align: center;
+}
+
+header h1{
+    font-size: 10vw;
+}
+
+header h2{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 15px 0 10px 0;
+}
+
+header p{
+    color: var(--secondary-text-color);
+}
+
+header > .header-container{
+    margin: auto;
+    max-width: 850px;
+}
+
+header > .header-container > a{
+    display: block;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 25px auto;
+    padding: 10px 20px;
+    width: max-content;
+    transition: .3s ease-in-out;
+}
+
+header > .header-container > a:hover{
+    background-color: var(--secondary-color);
+}
+
+header img{
+    display: none;
+}
+
+.redman-image{
+    margin-bottom: -4px;
+}
+
+/*---My-Skillset---*/
+
+#my_skillset{
+    background-color: var(--secondary-color);
+    padding: 30px 0px;
+}
+
+#my_skillset > h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+.skillset-area{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 30px;
+
+    margin: 30px 10px;
+}
+
+.skillset-area > .skillset-area-content{
+    background-color: var(--primary-color);
+    width: 375px;
+}
+
+.skillset-area-content > h3{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+}
+
+.skills-list{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    margin: 7px;
+    padding: 15px 10px;
+}
+
+.skills-list > ul{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+
+    list-style-type: none;
+    width: 100%;
+}
+
+.skills-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-list progress{
+    accent-color: var(--accent-color);
+    width: 150px;
+}
+
+/*---My Top 3 Projects*/
+
+#top_projects{
+    padding: 50px 20px;
+}
+
+#top_projects h2{
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 50px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+#labels-container{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+.top_projects__labels{
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+}
+
+.top_projects__labels .h3_to-do_list::before{
+    content: '1';
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    margin-right: 20px;
+    padding: 3px 10px;
+}
+
+.top_projects__labels .h3_calculator_app::before{
+    content: '2';
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    margin-right: 20px;
+    padding: 3px 10px;
+}
+
+.top_projects__labels .h3_fitness_tracker::before{
+    content: '3';
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    margin-right: 20px;
+    padding: 3px 10px;
+}
+
+.projects_content{
+    margin-top: 20px;
+}
+
+.to-do_list-container, .calculator_app-container, .fitness_tracker-container{
+    display: none;
+}
+
+#to-do-list:checked ~ .to-do_list-container,
+#calculator-app:checked ~ .calculator_app-container,
+#fitness-tracker:checked ~ .fitness_tracker-container{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.projects_content a{
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 25px;
+    padding: 10px 20px;
+    width: max-content;
+    transition: .3s ease-in-out;
+}
+
+.projects_content a:hover{
+    background-color: var(--primary-color);
+}
+
+/*---FOOTER---*/
+
+footer{
+    background-color: var(--secondary-color);
+}
+
+#footer-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 50px;
+
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#footer_icon{
+    font-size: 10em;
+}
+
+.footer-links a{
+    display: inline-block;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.footer-links a:hover{
+    color: var(--text-color);
+}
+
+.contact-location-links{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 50px;
+}
+
+.contact-location-links h3, .projects-links h3{
+    font-size: 1.75em;
+}
