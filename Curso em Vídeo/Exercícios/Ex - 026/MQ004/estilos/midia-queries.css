@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* Typical Devices Breackpoints */
+
+/* Print */
+@media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main{
+        border: 2px solid black;
+    }
+
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+
+    #print{
+        display: block;
+    }
+
+    #phone, #tablet, #pc, #tv{
+        display: none;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    body{
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+
+    #tablet{
+        display: block;
+    }
+
+    #phone, #pc, #tv, #print{
+        display: none;
+    }
+}
+
+/* Pc */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    body{
+        background-image: url('../imagens/back-pc.jpg');
+    }
+
+    main{
+        max-width: 680px;
+    }
+
+    #pc{
+        display: block;
+    }
+
+    #phone, #tablet, #tv, #print{
+        display: none;
+    }
+}
+
+/* Tv */
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+
+    main{
+        max-width: 800px;
+    }
+
+    #tv{
+        display: block;
+    }
+
+    #phone, #tablet, #pc, #print{
+        display: none;
+    }
+}

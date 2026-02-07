@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas p2</title> 
+    <style>
+        body{
+            background-color: darkgray;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            margin: 0px;
+        }
+
+        header{
+            background-color: lightgray;
+            margin: 10px;
+            padding: 5px;
+            box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.308);
+        }
+
+        header > h1{
+            margin: 7px;
+        }
+
+        .links > a{
+            text-decoration: none;
+            color: purple;
+            padding: 5px;
+        }
+
+        .links > :hover{
+            text-decoration: underline;
+            color: rgb(44, 6, 80);
+            transition: 1s;
+        }
+
+        main{
+            background-color: aliceblue;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 4px 5px 8px 2px rgba(0, 0, 0, 0.301);
+            border-radius: 10px 0px;
+        }
+
+        main > #navespecifico > a{
+            display: block;
+            background-color: lightgrey;
+            width: 70px;
+            height: auto;
+            padding: 6px;
+            margin-left: 10px;
+            text-indent: 7px;
+        }
+
+        main > #section01 > p{
+            margin: 10px;
+            background-color: rgb(104, 103, 103);
+            padding: 5px;
+        }
+
+        main >  #section02 > article{
+            margin: 10px;
+            padding: 5px;
+            background-color: rgb(104, 103, 103);
+        }
+
+        main >  #section02 > article > aside{
+            font-weight: bolder;
+            text-align: end;
+        }
+
+        footer{
+            background-color: black;
+            text-align: center;
+            font-weight: bolder;
+            color: white;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        #ball{
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            border-radius: 100%;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.404);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Criando um exercício com box-tags(isso nem existe kk)</h1>
+        <nav class="links">
+            <a href="#">link01</a>
+            <a href="#">link02</a>
+            <a href="#">link03</a>
+        </nav>
+    </header>
+
+    <main>
+        <nav class="links" id="navespecifico">
+            <a href="#">opção01</a>
+            <a href="#">opção02</a>
+            <a href="#">opção03</a>
+            <a href="#">opção04</a>
+            <a href="#">opção05</a>
+        </nav>
+
+        <section id="section01"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi aliquam voluptate voluptatum minima. Eius dolorum vitae ipsa totam sint odio cupiditate, asperiores repellendus libero autem illum deleniti ipsum explicabo?</p></section>
+
+        <section id="section02">
+            <article>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed vero error mollitia accusantium deleniti? Recusandae repudiandae rerum quia molestias modi exercitationem atque quos eaque nam facere aspernatur corrupti, consectetur quas?</p>
+                <aside> Escrito por Henrique Yamada - 2024 </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>TUDO ISSO, ESCRITO POR HENRIQUE YUJI YAMADA - 01/10/2024</footer>
+
+    <div id="ball"></div>
+</body>
+</html>

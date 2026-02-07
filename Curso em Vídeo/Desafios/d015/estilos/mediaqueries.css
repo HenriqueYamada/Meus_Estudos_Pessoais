@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*  Pequenas telas -> 600px
+
+    Celular -> Min: 600px; Max: 768px
+    Tablet -> Min: 768px; Max: 992px
+    Desktop -> Min: 992px; Max: 1200px
+
+    Grandes telas -> Min: 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
+    }
+
+    main #login_screen{
+        display: flex;
+        height: 40vh;
+        width: 70vw;
+    }
+
+    #login_screen #login_screen__imagem{
+        width: 60%;
+        height: 100%;
+
+        border-radius: 20px 0px 0px 20px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    body{
+        background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
+    }
+
+    main #login_screen{
+        display: flex;
+        height: 40vh;
+        width: 70vw;
+    }
+
+    #login_screen #login_screen__imagem{
+        width: 60%;
+        height: 100%;
+        border-radius: 20px 0px 0px 20px;
+    }
+}

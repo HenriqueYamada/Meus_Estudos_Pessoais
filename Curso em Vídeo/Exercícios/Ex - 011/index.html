@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídas em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-media.png" type="image/png">
+        <img src="Imagens/foto-grande.png" alt="Foto flexível tamanho grande">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <h2>From the class:</h2>
+    <p>Agora eu estou aprendendo a por áudios dentro do meu site! Dá só uma olhada!</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/twirly_tops-the_green_orbs.mp3" type="audio/mpeg">
+        <p>Sinto muito, mas aparentemente não foi possível carregar a música. <a href="midia/twirly_tops-the_green_orbs.mp3" download="twirly_tops-the_green_orbs.mp3">Clique aqui para baixar a música</a></p>
+    </audio>
+
+    <h2>From me:</h2>
+    <audio preload="metadata" controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

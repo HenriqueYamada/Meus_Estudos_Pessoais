@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/*Portrait*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('../imagens/cev-portrait.jpg');
+    background-position: bottom center;
+}

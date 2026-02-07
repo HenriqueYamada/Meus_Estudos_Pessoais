@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox - Centralização</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: lightsalmon;
+
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main{
+            background-color: lightgreen;
+            height: 50vh;
+            width: 50vw;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section{
+            background-color: lightblue;
+            width: 25vw;
+            height: 25vh;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1{
+            display: inline;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>A</h1>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            background-color: rgba(105, 105, 105, 0.37);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: green;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid blue;
+            outline: 3px solid red;
+        }
+
+        a:visited{
+            color: rgba(4, 165, 4, 0.89);
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: blueviolet;
+        }
+
+        .linksespecificos::before{
+            content: ' [ENTRE NESTE LINK!] -> ';
+            color: red;
+        }
+
+        .linksespecificos::after{
+            content: ' <-- ';
+            font-weight: bolder;
+        }
+
+        li#link01 > p{
+            display: none;
+        }
+
+        li#link01:hover > a{
+            color: rgba(172, 13, 13, 0.788);
+        }
+
+        li#link01:hover > p{
+            display: block;
+            color: peru;
+        }
+    </style>
+</head>
+<body>
+    <h1>Acessando links</h1>
+    <ul type="disc">
+        <li id="link01">
+            <a href="https://www.youtube.com/watch?v=B9cFMuzTLh8" target="_blank">Link para a pregação Amor Total - Israel Subirá</a>
+            <p>TEXTO ESCONDIDO!</p>
+        </li>
+        <li><a href="https://www.youtube.com/watch?v=fkQ-QKdJ_14&list=PLsDpUPJTUcXEfExUC9wacxq3TcR6sHfHs&index=7" target="_blank" class="linksespecificos">Link para a palavra sobre a força - The bible project</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/#google_vignette" target="_blank" class="linksespecificos">Link para a aula do curso em vídeo - Gustavo Guanabara</a></li>
+    </ul>
+</body>
+</html>

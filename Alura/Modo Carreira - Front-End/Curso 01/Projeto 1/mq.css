@@ -1,0 +1,13 @@
+@media screen and (max-width: 576px) {
+    section h1{
+        font-size: 24px;
+    }
+
+    #image-big{
+        display: none;
+    }
+
+    #image-small{
+        display: block;
+    }
+}

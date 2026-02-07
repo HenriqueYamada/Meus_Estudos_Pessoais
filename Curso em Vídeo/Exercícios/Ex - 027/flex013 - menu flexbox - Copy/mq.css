@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 600px) {
+    header{
+        display: block;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    ul{
+        flex-flow: column nowrap;
+    }
+
+    li{
+        align-self: stretch;
+        margin: 5px 0px;
+    }
+}

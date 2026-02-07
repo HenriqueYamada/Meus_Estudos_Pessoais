@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="cadastrosemcodigos.php" autocomplete="off" method="post">
+        <p>
+            <label for="iUser">Usuário: </label>
+            <input type="text" name="User" id="iUser" required minlength="5" maxlength="20" size="20" placeholder="Digite o nome de usuário" autocomplete="username">
+        </p>
+
+        <p>
+            <label for="iPass"> Senha: </label>
+            <input type="password" name="Pass" id="iPass" required minlength="8" maxlength="20" size="15" placeholder="Digite sua senha" autocomplete="current-password">
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>

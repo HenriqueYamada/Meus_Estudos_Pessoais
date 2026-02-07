@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaqueries.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="login_screen">
+            <div id="login_screen__imagem"> </div>
+
+            <div id="login_screen__login">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para accessar sua conta e poder fazer as configurações no seu ambiente.</p>
+
+                <form action="login.php" method="post" autocomplete="on">
+                    <div id="user_email">
+                        <label for="iemail"><span class="material-icons">person</span></label>
+                        <input type="email" name="email" id="i_email" autocomplete="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div id="user_password">
+                        <label for="ipassword"><span class="material-icons">key</span></label>
+                        <input type="password" name="password" id="ipassword" placeholder="Digite sua senha" minlength="8" required>
+                    </div>
+
+                    <div id="buttons">
+                        <input id="buttons__submit" type="submit" value="Entrar"> <br>
+
+                        <a id="buttons__forgot_my_password" href="#">Esqueci minha senha</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--Esqueci minha senha-->
+</body>
+</html>

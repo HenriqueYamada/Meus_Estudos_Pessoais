@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main{
+            background-color: red;
+            padding: 10px;
+            width: 500px;
+            margin: auto;
+        }
+
+        div{
+            margin: auto;
+        }
+
+        div > h1{
+            background-color: lightgrey;
+            width: 215px;
+            height: 100px;
+            border: 5px solid darkblue;
+            margin: auto;
+            padding: 7px;
+            box-shadow: 5px 5px 10px;
+        }
+
+        div > p{
+            background-color: lightgrey;
+            text-indent: 20px;
+            width: 300px;
+            height: auto;
+            padding: 12px;
+            margin: auto;
+            margin-top: 20px;
+            border: 5px solid darkblue;
+            box-shadow: 5px 5px 10px;
+        }
+
+        a{
+            border: 2px solid darkred;
+        }
+    </style>
+</head>
+<body>
+    <Main>
+        <div><h1>Teste da aula de caixas</h1></div>
+        <div><p>Aqui eu usei um título principal, e ele está no modelo de box-level, assim como há outras tags, porém, este link: <a id="link01" href="#">está em inline-level</a>, clique e teste!</p></div>
+    </Main>
+</body>
+</html>

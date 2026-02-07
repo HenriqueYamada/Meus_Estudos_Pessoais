@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastrosemcodigos.php" method="get">
+        <p>
+            <label for="iano">O ano que você nasceu:</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2025" value="2000" oninput="CalcIdade()" required>
+        </p>
+
+        <p>
+            <label for="iidade">Sua idade é:</label>
+            <output id="iidade">25</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function CalcIdade(){
+            let val = new Date().getFullYear()
+            iidade.innerHTML = Number(val) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
