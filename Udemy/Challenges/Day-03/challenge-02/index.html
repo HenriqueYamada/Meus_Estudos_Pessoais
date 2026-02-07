@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-family: "Josefin Sans", sans-serif;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.973);
+            height: 100vh;
+        }
+
+        .button-hover{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            font-weight: 600;
+            background-image: linear-gradient(to right, #2abfff, #0071FF);
+            color: white;
+            border-radius: 7px;
+            height: 100px;
+            width: 300px;
+            cursor: pointer;
+            z-index: 0;
+        }
+
+        .button-hover::after{
+            content: '';
+            position: absolute;
+            background-image: linear-gradient(to right, #ffee00, #ffb300);
+            border-radius: 7px;
+            height: 100%;
+            width: 0%;
+            top: 0;
+            left: 0;
+            transition: 300ms ease-in-out;
+            z-index: -1;
+        }
+
+        .button-hover:hover{
+            color: black;
+        }
+
+        .button-hover:hover::after{
+            width: 100%;
+        }
+
+        p{
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-hover">
+        <p>Hover Me!</p>
+    </div>
+</body>
+</html>

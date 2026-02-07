@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        #descendent h2{
+            color: aqua;
+        }
+
+        #child > h2{
+            color: violet;
+        }
+
+        h2 + p{
+            color: brown;
+        }
+
+        #subsequent > h2 ~ p{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div id="descendent">
+        <h2>Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni vel molestias, dolorem veniam dicta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni vel molestias, dolorem veniam dicta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni vel molestias, dolorem veniam dicta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni vel molestias, dolorem veniam dicta.</p>
+    </div>
+
+    <div id="child">
+        <h2>Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni vel molestias, dolorem veniam dicta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni vel molestias, dolorem veniam dicta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni vel molestias, dolorem veniam dicta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni vel molestias, dolorem veniam dicta.</p>
+    </div>
+
+    <div id="next">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni vel molestias, dolorem veniam dicta.</p>
+        <h2>Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni vel molestias, dolorem veniam dicta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni vel molestias, dolorem veniam dicta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni vel molestias, dolorem veniam dicta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni vel molestias, dolorem veniam dicta.</p>
+    </div>
+
+    <div id="subsequent">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni vel molestias, dolorem veniam dicta.</p>
+        <h2>Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni vel molestias, dolorem veniam dicta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni vel molestias, dolorem veniam dicta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni vel molestias, dolorem veniam dicta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni vel molestias, dolorem veniam dicta.</p>
+    </div>
+</body>
+</html>

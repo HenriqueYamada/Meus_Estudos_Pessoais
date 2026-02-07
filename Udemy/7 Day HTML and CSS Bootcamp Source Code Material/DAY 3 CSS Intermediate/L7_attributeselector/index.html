@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attribute Selector</title>
+  <style>
+    form{
+      padding: 20px;
+    }
+    input{
+      margin: 5px;
+      box-sizing: border-box;
+    }
+    input[type="email"], input[type="password"]{
+      height: 25px;
+      width: 150px;
+      border-radius: 30px;
+      border: 1px solid black;
+      padding-left: 10px;
+    }
+    input[type="submit"]{
+      height: 25px;
+      width: 150px;
+      background-color: brown;
+      border: none;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <input type="email" placeholder="Enter your email"><br/>
+    <input type="password" placeholder="Enter your password"><br/>
+    <input type="submit" value="SIGN IN">
+  </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(13, 13, 20);
+    padding: min(50px, 7%);
+}
+
+h1{
+    margin: 30px 0px;
+}
+
+#box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-auto-rows: auto;
+    gap: 15px;
+
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.box{
+    background-color: #222429;
+    border: 1px solid rgb(75, 82, 92);
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.box > h2{
+    margin-bottom: 10px;
+}

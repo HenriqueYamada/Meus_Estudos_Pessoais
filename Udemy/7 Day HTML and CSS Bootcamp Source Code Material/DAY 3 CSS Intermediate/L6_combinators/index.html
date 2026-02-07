@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combinators</title>
+  <style>
+    *{
+      margin: 0;
+    }
+    div{
+      background-color: bisque;
+      padding: 20px;
+    }
+    h2{
+      color: blue;
+    }
+    header{
+      background-color: beige;
+      padding: 20px;
+    }
+    h2 ~ p{
+      font-weight: bold;
+      color: violet;
+    }
+    h2 + p{
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p>Not a subsequent sibling</p>
+    <h2>This is a heading</h2>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+  </header>
+  <div>
+    <h2>Another heading</h2>
+    <article>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae vel vero adipisci atque sed ipsam, exercitationem nulla. Nobis voluptatibus vero modi repellendus temporibus optio recusandae error, non, incidunt sit accusamus?</p>
+    </article>
+  </div>
+</body>
+</html>

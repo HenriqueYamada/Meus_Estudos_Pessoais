@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14pt;
+        }
+
+        #unique-box{
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px;
+            gap: 10px;
+
+            border: 3px solid black;
+        }
+
+        #box1{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        #box4{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0071FF;
+        }
+    </style>
+</head>
+<body>
+    <div id="unique-box">
+        <div id="box1" class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div id="box4" class="box">4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,213 @@
+:root{
+  --accent-color: #d52c3a;
+  --primary-color: #1B1C1F;
+  --secondary-color: #101113;
+  --text-color: #d9d9d9;
+  --secondary-text-color: #7f8082;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14pt;
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+body{
+  min-height: 100vh;
+  background-color: var(--primary-color);
+}
+header{
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+header .container{
+  width: 850px;
+  max-width: 100%;
+}
+header img{
+  height: 70vh;
+}
+header h1{
+  margin-top: 200px;
+  font-size: 4rem;
+}
+header h2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+header p{
+  color: var(--secondary-text-color);
+}
+header .read-more{
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 1000px;
+  padding: .5em 1.25em;
+  text-decoration: none;
+  margin-bottom: 80px;
+  transition: 200ms ease;
+  cursor: pointer;
+}
+header .read-more:hover{
+  background-color: var(--secondary-color);
+}
+#skill-section{
+  padding: 80px 20px 150px 20px;
+  background-color: var(--secondary-color);
+}
+#skill-section h2{
+  font-size: 3rem;
+  text-align: center;
+}
+#skill-section .wrapper{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.skill-container{
+  width: 400px;
+  max-width: 100%;
+  border: 10px solid var(--primary-color);
+  border-top: none;
+}
+.skill-container h3{
+  background-color: var(--primary-color);
+  padding: 15px 0;
+  text-align: center;
+  text-transform: uppercase; 
+}
+.skill-container ul{
+  margin: 10px 0;
+  list-style: none;
+}
+.skill-container ul li{
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.skill-container ul li progress{
+  accent-color: var(--accent-color);
+}
+#projects-section{
+  padding: 100px 20px;
+}
+#projects-section h2{
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 60px;
+}
+details{
+  margin: 20px auto;
+  width: 1000px;
+  max-width: 100%;
+  background-color: var(--secondary-color);
+  border-radius: 6px;
+}
+details summary{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 30px;
+  padding: 30px;
+}
+details .number{
+  background-color: var(--accent-color);
+  min-height: 50px;
+  min-width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+details h3{
+  font-size: 1.75rem;
+}
+details .text-container{
+  padding: 30px;
+  padding-top: 0;
+}
+details .project-link{
+  display: inline-block;
+  margin-top: 30px;
+  background-color: var(--accent-color);
+  color: white;
+  padding: .75em 1.5em;
+  border-radius: 2px;
+  font-weight: 500;
+  transition: 300ms ease;
+  cursor: pointer;
+}
+details .project-link:hover{
+  background-color: var(--primary-color);
+}
+footer{
+  background-color: var(--secondary-color);
+  padding: 100px 20px;
+}
+footer .grid-container{
+  margin: 0 auto; 
+  width: 1000px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr max-content;
+  gap: 100px;
+}
+
+footer #at-symbol{
+  font-size: 250pt;
+}
+footer h3{
+  margin-top: 80px;
+  font-size: 2rem;
+}
+footer a{
+  margin-top: 5px;
+  display: inline-block;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+footer a:hover{
+  color: var(--text-color);
+}
+@media(max-width: 1000px){
+  header{
+    padding: 100px 20px;
+    text-align: center;
+  }
+  header h1{
+    margin-top: 0;
+    font-size: 10vw;
+  }
+  header h2{
+    font-size: 1.3rem;
+  }
+  header img{
+    display: none;
+  }
+  footer .grid-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+  footer #at-symbol{
+    font-size: 150pt;
+  }
+  footer h3{
+    margin-top: 50px;
+  }
+}

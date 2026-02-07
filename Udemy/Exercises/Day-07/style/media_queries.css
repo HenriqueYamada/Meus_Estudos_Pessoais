@@ -1,0 +1,25 @@
+@media (min-width: 1400px){
+    header{
+
+    }
+
+    header > .header-container{
+        display: inline;
+    }
+
+    header > img{
+        display: inline;
+    }
+}
+
+@media (max-width: 1399px) and (min-width: 1000px){
+    header > img{
+        display: block;
+    }
+}
+
+@media (max-width: 999px){
+    header{
+        padding: 100px 20px;
+    }
+}

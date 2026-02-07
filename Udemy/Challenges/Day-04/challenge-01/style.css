@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 0.9em;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0.5px 5px rgba(0, 0, 0, 0.301);
+    margin-bottom: 100px;
+    height: 60px;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    list-style-type: none;
+}
+
+a{
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+}
+
+nav .active{
+    color: black;
+}
+
+/*---INDEX---*/
+
+#main-content{
+    max-width: 65%;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#main-content p{
+    text-align: center;
+    margin: 50px 0px;
+}
+
+#link-button{
+    display: block;
+    background-image: linear-gradient(to right, #D786FF, #722CFF);
+    color: white;
+    font-weight: 600;
+    border: 0;
+    border-radius: 40px;
+    margin: auto;
+    padding: 25px 50px;
+    width: max-content;
+    transition: 150ms ease-in-out;
+    cursor: pointer;
+}
+
+#link-button:hover{
+    scale: 1.1;
+}
+
+/*---ABOUT---*/
+
+#about-content{
+    height: auto;
+    margin: 0px 50px;
+}
+
+#about-content > h1{
+    margin-bottom: 30px;
+}
+
+.about-video{
+    height: 100vh;
+    width: 100%;
+}
+
+.video-player{
+    display: block;
+    border-radius: 10px;
+    margin: auto;
+    width: min(750px, 100%);
+    aspect-ratio: 16 / 9;
+}
+
+/*---Products---*/
+
+#products-area{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 30px;
+    gap: 30px;
+}
+
+.products{
+    color: white;
+    align-content: center;
+    text-align: center;
+    border-radius: 30px;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.products > h2{
+    font-size: 1.7em;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.products p{
+    font-size: 1.1em;
+}
+
+.products:first-child{
+    color: black;
+    border: 1px solid black;
+}
+
+.products:nth-last-child(2){
+    background-color: #7932ff;
+}
+
+.products:last-child{
+    background-color: black;
+}
+
+/*---LOGIN---*/
+
+#login-area{
+    width: 100%;
+}
+
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+input{
+    border: 0;
+    border-radius: 30px;
+    font-size: 1.2em;
+    padding: 20px;
+    width: 400px;
+}
+
+input[type="Submit"]{
+    background-color: #0071ff;
+    color: white;
+    padding: 10px 70px;
+    width: max-content;
+}
+
+/*---TAGS ISOLADAS---*/
+
+h1{
+    font-size: 4.5em;
+}
+
+p{
+    line-height: 1.5em;
+}
