@@ -3,3 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+form{
+    display: flex;
+    flex-direction: column;   
+    gap: 10px;
+}
+
+input{
+    width: 100%;
+}
+
+.form__inputs{
+    display: flex;
+    gap: 10px;
+    width: 500px;
+}
+
+.form__inputs label{
+    width: 100px;
+}
+
+section button{
+    width: max-content;
+}
+
+#form__inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__inputs__gender > input[type="checkbox"]{
+    margin-right: 10px;
+    width: 20px;
+}
+
+.form__inputs__gender{
+    display: flex;
+    margin-left: 20px;
+}
+
