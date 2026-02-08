@@ -16,49 +16,63 @@
             <form action="" method="get">
                 <!--DADOS PESSOAIS-->
 
-                <div class="form__inputs">
-                    <label for="userName">Nome:</label>
-                    <input type="text" name="userName">
-                </div>
+                <fieldset>
+                    <legend>Dados Pessoas</legend>
 
-                <div class="form__inputs">
-                    <label for="age">Idade:</label>
-                    <input type="number" name="age" min="12" max="100">
-                </div>
-
-                <div class="form__inputs">
-                    <label for="birthday">Data de Aniversário:</label>
-                    <input type="date" name="birthday">
-                </div>
-
-                <div class="form__inputs">
-                    <label for="email">E-mail?</label>
-                    <input type="email" name="email" placeholder="Digite o seu e-mail">
-                </div>
-
-                <div class="form__inputs">
-                    <label for="telephone">Telefone:</label>
-                    <input type="tel" name="telephone">
-                </div>
-
-                <div class="form__inputs">
-                    <label for="upload">Baixe uma foto:</label>
-                    <input type="file" name="upload">
-                </div>
-
-                <div class="form__inputs" id="form__inputs">
-                    <label for="gender">Gênero:</label>
-                    <div class="form__inputs__gender">
-                        <input type="checkbox" name="gender-male">
-                        <label for="gender-male">Masculino</label>
+                    <div class="form__inputs">
+                        <label for="userName">Nome:</label>
+                        <input type="text" name="userName">
                     </div>
 
-                    <div class="form__inputs__gender">
-                        <input type="checkbox" name="gender-female">
-                        <label for="gender-female">Feminino</label>
+                    <div class="form__inputs">
+                        <label for="age">Idade:</label>
+                        <input type="number" name="age" min="12" max="100">
                     </div>
-                </div>
 
+                    <div class="form__inputs">
+                        <label for="birthday">Data de Aniversário:</label>
+                        <input type="date" name="birthday">
+                    </div>
+
+                    <div class="form__inputs">
+                        <label for="email">E-mail?</label>
+                        <input type="email" name="email" placeholder="Digite o seu e-mail">
+                    </div>
+
+                    <div class="form__inputs">
+                        <label for="telephone">Telefone:</label>
+                        <input type="tel" name="telephone">
+                    </div>
+
+                    <div class="form__inputs">
+                        <label for="upload">Baixe uma foto:</label>
+                        <input type="file" name="upload">
+                    </div>                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Perfil</legend>
+
+                    <div class="form__inputs" id="form__inputs">
+                        <p>Gênero:</p>
+                        <div class="form__inputs__gender">
+                            <input type="radio" name="userGender" value="Masculino">
+                            <label for="gender-male">Masculino</label>
+                        </div>
+
+                        <div class="form__inputs__gender">
+                            <input type="radio" name="userGender" value="Feminino">
+                            <label for="gender-female">Feminino</label>
+                        </div>
+
+                        <div class="form__inputs__gender">
+                            <input type="radio" name="userGender" value="notInformed">
+                            <label for="notInformed">Prefiro não informar</label>
+                        </div>
+                    </div>
+
+
+                </fieldset>
 
                 <button>Enviar</button>
             </form>
