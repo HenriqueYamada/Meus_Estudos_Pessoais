@@ -14,8 +14,6 @@
     <main>
         <section>
             <form action="" method="get">
-                <!--DADOS PESSOAIS-->
-
                 <fieldset>
                     <legend>Dados Pessoas</legend>
 
@@ -71,7 +69,16 @@
                         </div>
                     </div>
 
-
+                    <div class="form__inputs">
+                        <label for="maritalStatus">Estado civil:</label>
+                        <select name="maritalStatus">
+                            <option value="notInformed">Selecione...</option>
+                            <option value="casado">Casado</option>
+                            <option value="solteiro">Solteiro</option>
+                            <option value="divorciado">Divorciado</option>
+                            <option value="uniao-estavel">União estável</option>
+                        </select>
+                    </div>
                 </fieldset>
 
                 <button>Enviar</button>
