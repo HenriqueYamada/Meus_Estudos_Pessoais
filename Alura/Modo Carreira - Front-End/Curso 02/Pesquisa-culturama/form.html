@@ -19,32 +19,32 @@
 
                     <div class="form__inputs">
                         <label for="userName">Nome:</label>
-                        <input type="text" name="userName">
+                        <input type="text" name="userName" required>
                     </div>
 
                     <div class="form__inputs">
-                        <label for="age">Idade:</label>
-                        <input type="number" name="age" min="12" max="100">
+                        <label for="idAge">Idade:</label>
+                        <input type="number" name="userAge" id="idAge" min="12" max="100" required>
                     </div>
 
                     <div class="form__inputs">
-                        <label for="birthday">Data de Aniversário:</label>
-                        <input type="date" name="birthday">
+                        <label for="idBirthday">Data de Aniversário:</label>
+                        <input type="date" name="userBirthday" id="idBirthday">
                     </div>
 
                     <div class="form__inputs">
-                        <label for="email">E-mail:</label>
-                        <input type="email" name="email" placeholder="Digite o seu e-mail">
+                        <label for="idEmail">E-mail:</label>
+                        <input type="email" name="userEmail" id="idEmail" placeholder="Digite o seu e-mail" required>
                     </div>
 
                     <div class="form__inputs">
-                        <label for="telephone">Telefone:</label>
-                        <input type="tel" name="telephone">
+                        <label for="idTelephone">Telefone:</label>
+                        <input type="tel" name="userTelephone" id="idTelephone">
                     </div>
 
                     <div class="form__inputs">
-                        <label for="upload">Baixe uma foto:</label>
-                        <input type="file" name="upload">
+                        <label for="idUpload">Baixe uma foto:</label>
+                        <input type="file" name="userUpload" id="idUpload">
                     </div>                    
                 </fieldset>
 
@@ -54,24 +54,24 @@
                     <div class="form__inputs" id="form__inputs">
                         <p>Gênero:</p>
                         <div class="form__inputs__gender">
-                            <input type="radio" name="userGender" value="Masculino">
-                            <label for="gender-male">Masculino</label>
+                            <input type="radio" name="userGender" value="Masculino" id="idGenderMale">
+                            <label for="idGenderMale">Masculino</label>
                         </div>
 
                         <div class="form__inputs__gender">
-                            <input type="radio" name="userGender" value="Feminino">
-                            <label for="gender-female">Feminino</label>
+                            <input type="radio" name="userGender" value="Feminino" id="idGenderFemale">
+                            <label for="idGenderFemale">Feminino</label>
                         </div>
 
                         <div class="form__inputs__gender">
-                            <input type="radio" name="userGender" value="notInformed">
-                            <label for="notInformed">Prefiro não informar</label>
+                            <input type="radio" name="userGender" value="notInformed" id="idGenderNotInformed">
+                            <label for="idGenderNotInformed">Prefiro não informar</label>
                         </div>
                     </div>
 
                     <div class="form__inputs">
-                        <label for="maritalStatus">Estado civil:</label>
-                        <select name="maritalStatus">
+                        <label for="idMaritalStatus">Estado civil:</label>
+                        <select name="userMaritalStatus" id="idMaritalStatus" required>
                             <option value="notInformed">Selecione...</option>
                             <option value="casado">Casado</option>
                             <option value="solteiro">Solteiro</option>
@@ -81,40 +81,112 @@
                     </div>
 
                     <div class="form__inputs">
-                        <label for="userState">Estado:</label>
-                        <select name="userState">
-                            <option value="Acre">Acre</option>
-                            <option value="Alagoas">Alagoas</option>
-                            <option value="Amapá">Amapá</option>
-                            <option value="Amazonas">Amazonas</option>
-                            <option value="Bahia">Bahia</option>
-                            <option value="Ceará">Ceará</option>
-                            <option value="Distrito Federal">Distrito Federal</option>
-                            <option value="Espirito Santo">Espirito Santo</option>
-                            <option value="Goiás">Goiás</option>
-                            <option value="Maranhão">Maranhão</option>
-                            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
-                            <option value="Mato Grosso">Mato Grosso</option>
-                            <option value="Minas Gerais">Minas Gerais</option>
-                            <option value="Pará">Pará</option>
-                            <option value="Paraíba">Paraíba</option>
-                            <option value="Paraná">Paraná</option>
-                            <option value="Pernambuco">Pernambuco</option>
-                            <option value="Piauí">Piauí</option>
-                            <option value="Rio de Janeiro">Rio de Janeiro</option>
-                            <option value="Rio Grande do Norte">Rio Grande do Norte</option>
-                            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
-                            <option value="Rondônia">Rondônia</option>
-                            <option value="Roraima">Roraima</option>
-                            <option value="Santa Catarina">Santa Catarina</option>
-                            <option value="São Paulo">São Paulo</option>
-                            <option value="Sergipe">Sergipe</option>
-                            <option value="Tocantins">Tocantins</option>
+                        <label for="idUserState">Estado:</label>
+                        <select name="userState" id="idUserState" required>
+                            <option value="acre">Acre</option>
+                            <option value="alagoas">Alagoas</option>
+                            <option value="amapa">Amapá</option>
+                            <option value="amazonas">Amazonas</option>
+                            <option value="bahia">Bahia</option>
+                            <option value="ceara">Ceará</option>
+                            <option value="distritoFederal">Distrito Federal</option>
+                            <option value="espiritoSanto">Espirito Santo</option>
+                            <option value="goias">Goiás</option>
+                            <option value="maranhao">Maranhão</option>
+                            <option value="matoGrossoDoSul">Mato Grosso do Sul</option>
+                            <option value="matoGrosso">Mato Grosso</option>
+                            <option value="minasGerais">Minas Gerais</option>
+                            <option value="para">Pará</option>
+                            <option value="paraiba">Paraíba</option>
+                            <option value="parana">Paraná</option>
+                            <option value="pernambuco">Pernambuco</option>
+                            <option value="piaui">Piauí</option>
+                            <option value="rioDeJaneiro">Rio de Janeiro</option>
+                            <option value="rioGrandeDoNorte">Rio Grande do Norte</option>
+                            <option value="rioGrandeDoSul">Rio Grande do Sul</option>
+                            <option value="rondonia">Rondônia</option>
+                            <option value="roraima">Roraima</option>
+                            <option value="santaCatarina">Santa Catarina</option>
+                            <option value="saoPaulo">São Paulo</option>
+                            <option value="sergipe">Sergipe</option>
+                            <option value="tocantins">Tocantins</option>
                         </select>
+                    </div>
+
+                    <div class="form__inputs">
+                        <label for="idUserCity">Cidade:</label>
+                        <input type="text" name="userCity" id="idUserCity" required>
                     </div>
                 </fieldset>
 
-                <button>Enviar</button>
+                <fieldset>
+                    <legend>Hábitos</legend>
+
+                    <div class="form__inputs" id="form__inputs__social-midia-container">
+                        <p>Redes sociais:</p>
+                        <div class="form__inputs__social-midia-content">
+                            <input type="checkbox" name="userSocialMediaFacebook" id="userSocialMediaFacebook" value="facebook">
+                            <label for="userSocialMediaFacebook">Facebook</label>
+                        </div>
+
+                        <div class="form__inputs__social-midia-content">
+                            <input type="checkbox" name="userSocialMediaInstagram" id="userSocialMediaInstagram" value="instagram">
+                            <label for="userSocialMediaInstagram">Instagram</label>
+                        </div>
+
+                        <div class="form__inputs__social-midia-content">
+                            <input type="checkbox" name="userSocialMediaTwitter" id="userSocialMediaTwitter" value="twitter">
+                            <label for="userSocialMediaTwitter">Twitter</label>
+                        </div>
+
+                        <div class="form__inputs__social-midia-content">
+                            <input type="checkbox" name="userSocialMediaLinkedin" id="userSocialMediaLinkedin" value="linkedin">
+                            <label for="userSocialMediaLinkedin">LinkedIn</label>
+                        </div>
+
+                        <div class="form__inputs__social-midia-content">
+                            <input type="checkbox" name="userSocialMediaTiktok" id="userSocialMediaTiktok" value="tiktok">
+                            <label for="userSocialMediaTiktok">TikTok</label>
+                        </div>
+                    </div>
+
+                    <div class="form__inputs">
+                        <label for="idUserMusicalStyle">Estilo Musical:</label>
+                        <input type="text" name="userMusicalStyle" id="idUserMusicalStyle" placeholder="Ex: Rock, Pop, Mpb, etc...">
+                    </div>
+
+                    <div class="form__inputs" id="form__inputs-color">
+                        <label for="idFavoriteColor">Cor preferida:</label>
+                        <input type="color" name="userFavoriteColor" id="idFavoriteColor">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Opinião</legend>
+
+                    <div class="form__inputs">
+                        <label for="idUserOpinion">Satisfação:</label>
+                        <input type="range" name="userOpinion" id="idUserOpinion" min="0" max="10" step="1">
+                    </div>
+
+                    <div class="form__inputs">
+                        <label for="idComment">Comentários:</label>
+                        <textarea name="userComment" id="idComment" minlength="10" maxlength="1000" cols="50" rows="10" placeholder="Escreva aqui sua opinião sobre o nosso serviço!"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Confirmações</legend>
+
+                    <div class="form__inputs">
+                        
+                    </div>
+                </fieldset>
+
+                <div class="send-clear">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
             </form>
         </section>
     </main>
