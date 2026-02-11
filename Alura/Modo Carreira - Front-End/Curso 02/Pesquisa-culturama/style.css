@@ -71,11 +71,24 @@ section button{
 }
 
 #satisfactionLevel-container input{
-    margin: 0 10px;
+    margin: 0 5px 0 10px;
     width: max-content;
 }
 
- .satisfactionLevel-content{
+#form__inputs-lgpd-container{
     display: flex;
+    flex-direction: column;
+}
 
+.form__inputs-lgpd-content{
+    display: flex;
+}
+
+.form__inputs-lgpd-content input{
+    margin: 0 10px;
+    width: 16px;
+}
+
+.form__inputs-lgpd-content label{
+    width: max-content;
 }
