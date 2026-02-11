@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    padding: 25px;
+}
+
 fieldset{
     display: flex;
     flex-direction: column;
@@ -30,10 +34,6 @@ input{
 
 .form__inputs label{
     width: 100px;
-}
-
-section button{
-    width: max-content;
 }
 
 #form__inputs{
@@ -91,4 +91,11 @@ section button{
 
 .form__inputs-lgpd-content label{
     width: max-content;
+}
+
+.send-clear{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100px;
 }
