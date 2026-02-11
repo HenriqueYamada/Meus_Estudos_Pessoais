@@ -52,5 +52,15 @@ section button{
 
 .form__inputs__gender{
     display: flex;
-    margin-left: 20px;
+    margin-left: 10px;
+}
+
+#form__inputs__social-midia-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__inputs__social-midia-content > input{
+    width: max-content;
+    margin: 0 5px 0 10px;
 }
