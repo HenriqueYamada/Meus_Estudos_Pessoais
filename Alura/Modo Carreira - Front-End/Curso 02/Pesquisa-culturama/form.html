@@ -152,7 +152,12 @@
 
                     <div class="form__inputs">
                         <label for="idUserMusicalStyle">Estilo Musical:</label>
-                        <input type="text" name="userMusicalStyle" id="idUserMusicalStyle" placeholder="Ex: Rock, Pop, Mpb, etc...">
+                        <input type="text" list="musicTypes" name="userMusicalStyle" id="idUserMusicalStyle">
+                        <datalist id="musicTypes">
+                            <option value="Rock">
+                            <option value="Samba">
+                            <option value="Mpb">
+                        </datalist>
                     </div>
 
                     <div class="form__inputs" id="form__inputs-color">
