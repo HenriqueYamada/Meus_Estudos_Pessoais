@@ -83,6 +83,7 @@
                     <div class="form__inputs">
                         <label for="idUserState">Estado:</label>
                         <select name="userState" id="idUserState" required>
+                            <option value="selecione">Selecione...</option>
                             <option value="acre">Acre</option>
                             <option value="alagoas">Alagoas</option>
                             <option value="amapa">Amapá</option>
@@ -169,14 +170,33 @@
                 <fieldset>
                     <legend>Opinião</legend>
 
-                    <div class="form__inputs">
-                        <label for="idUserOpinion">Satisfação:</label>
-                        <input type="range" name="userOpinion" id="idUserOpinion" min="0" max="10" step="1">
+                    <div class="form__inputs" id="satisfactionLevel-container">
+                        <p>Qual a qualidade do nosso serviço?</p>
+
+                        <div class="satisfactionLevel-content">
+                            <input type="radio" name="satisfactionLevel" id="muitoBom">
+                            <label for="muitoBom">Muito bom</label>
+                        </div>
+
+                        <div class="satisfactionLevel-content">
+                            <input type="radio" name="satisfactionLevel" id="bom">
+                            <label for="bom">Bom</label>
+                        </div>
+
+                        <div class="satisfactionLevel-content">
+                            <input type="radio" name="satisfactionLevel" id="regular">
+                            <label for="regular">Regular</label>
+                        </div>
+
+                        <div class="satisfactionLevel-content">
+                            <input type="radio" name="satisfactionLevel" id="ruim">
+                            <label for="ruim">Ruim</label>
+                        </div>
                     </div>
 
                     <div class="form__inputs">
                         <label for="idComment">Comentários:</label>
-                        <textarea name="userComment" id="idComment" minlength="10" maxlength="1000" cols="50" rows="10" placeholder="Escreva aqui sua opinião sobre o nosso serviço!"></textarea>
+                        <textarea name="userComment" id="idComment" minlength="10" maxlength="1000" cols="50" rows="10" placeholder="Digite aqui a sua opinião sobre o nosso serviço"></textarea>
                     </div>
                 </fieldset>
 
