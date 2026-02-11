@@ -44,7 +44,8 @@
 
                     <div class="form__inputs">
                         <label for="idTelephone">Telefone:</label>
-                        <input type="tel" name="userTelephone" id="idTelephone">
+                        <input type="tel" name="userTelephone" id="idTelephone" aria-describedby="ajuda-telefone">
+                        <small id="ajuda-telefone">Digite 11 números sendo os dois primeiros o DDD</small>
                     </div>
 
                     <div class="form__inputs">
@@ -129,8 +130,8 @@
                     <legend>Hábitos</legend>
 
                     <div class="form__inputs" id="form__inputs__social-midia-container">
-                        <p>Redes sociais:</p>
-                        <div class="form__inputs__social-midia-content">
+                        <p id="form__inputs__social-midia-container__title" >Redes sociais:</p>
+                        <div class="form__inputs__social-midia-content" aria-labelledby="form__inputs__social-midia-container__title">
                             <input type="checkbox" name="social" id="facebook" value="facebook">
                             <label for="facebook">Facebook</label>
                         </div>
@@ -222,8 +223,8 @@
                 </fieldset>
 
                 <div class="send-clear">
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar" aria-label="Enviar os dados do formulário">
+                    <input type="reset" value="Limpar" aria-label="Apagar os dados do formulário">
                 </div>
             </form>
         </section>
