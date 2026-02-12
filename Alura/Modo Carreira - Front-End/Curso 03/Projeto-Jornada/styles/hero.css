@@ -1,0 +1,34 @@
+section#hero{
+    height: 400px;
+    width: 100%;
+}
+
+.hero__img{
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/Mobile/Homepage/Banner\ homepage.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*---Media-Queries*/
+
+@media screen and (min-width: 320px) {
+    .hero__img{
+        background-image: url(../images/Tablet/Homepage/Banner\ tablet.png);
+        height: 620px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero__img{
+        background-image: url(../images/Desktop/Homepage/Banner.png);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero__img{
+        background-image: url(../images/Desktop_Large/Homepage/Banner.png);
+    }
+}
