@@ -47,3 +47,10 @@
         width: 260px;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    header{
+        justify-content: center;
+        gap: 658px;
+    }
+}
