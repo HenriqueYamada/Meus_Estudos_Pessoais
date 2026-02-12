@@ -6,6 +6,11 @@ header{
     background-color: var(--background-tertiary-color);
     padding: 37px 48px;
     height: 138px;
+    width: 100%;
+}
+
+#header__images img:last-child{
+    display: none;
 }
 
 header > a > img{
@@ -60,13 +65,15 @@ header nav img{
 header ul{
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 40px;
     list-style-type: none;
 }
 
 header ul a{
     color: var(--text-secondary-color);
     text-decoration: none;
+    font-family: "Montserrat";
+    font-weight: bold;
     transition: 200ms;
 }
 

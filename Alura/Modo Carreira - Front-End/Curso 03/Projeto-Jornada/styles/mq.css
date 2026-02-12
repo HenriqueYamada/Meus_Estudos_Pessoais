@@ -1,9 +1,61 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 0) {
     #idMenu:checked ~ nav{
         right: 0;
+    }
+    
+    header nav ul{
+        gap: 24px;
+    }
+
+    header nav a{
+        font-size: 1.5rem;
     }
 
     #idMenu:checked ~ #idOverlay{
         display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header nav{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: static;
+        background-color: transparent;
+        box-shadow: 0 0;
+        padding: 0;
+        max-width: 100%;
+        width: max-content;
+        height: 100%;
+    }
+
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        font-size: 1rem;
+        gap: 60px;
+    }
+
+    header label{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1260px) {
+    #header__images img:first-child{
+        display: none;
+    }
+
+    #header__images img:last-child{
+        display: inline-block;
+        width: max-content;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    header{
+        justify-content: center;
+        gap: 628px;
     }
 }
