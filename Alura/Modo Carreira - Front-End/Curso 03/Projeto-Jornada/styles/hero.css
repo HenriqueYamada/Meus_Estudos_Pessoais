@@ -26,3 +26,9 @@ section#hero{
         background-image: url(../images/Desktop/Homepage/Banner.png);
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .hero__img{
+        background-image: url(../images/Desktop_Large/Homepage/Banner.png);
+    }
+}
