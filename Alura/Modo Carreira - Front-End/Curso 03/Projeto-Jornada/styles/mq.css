@@ -35,3 +35,15 @@
         width: 100%;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    header a img:first-child{
+        display: none;
+    }
+
+    header a img:last-child{
+        display: inline-block;
+        height: 64px;
+        width: 260px;
+    }
+}
