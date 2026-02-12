@@ -9,4 +9,16 @@
 @import url(depoiments.css);
 @import url(footer.css);
 
+<<<<<<< Updated upstream
 @import url(mq.css);
+=======
+body{
+    height: 100vh;
+}
+
+main{
+    margin-top: 138px;
+    height: 100%;
+    width: 100%;
+}
+>>>>>>> Stashed changes
