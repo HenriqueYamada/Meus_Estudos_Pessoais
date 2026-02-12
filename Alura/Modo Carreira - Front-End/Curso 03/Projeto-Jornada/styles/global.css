@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-primary-color: #FFFFFF;
+    --background-secondary-color: #F5F5F5;
+    --background-tertiary-color: #000000;
+
+    --color-primary: #8F0101;
+    --color-secondary: #B81515;
+
+    --header-weight: 700;
+    --title-wight: 500;
+    --text-weight: 400;
+    --text-font: "Montserrat", sans-serif;
+}
