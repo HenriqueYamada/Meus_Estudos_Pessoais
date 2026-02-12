@@ -11,3 +11,12 @@ section#hero{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/*---Media-Queries*/
+
+@media screen and (min-width: 320px) {
+    .hero__img{
+        background-image: url(../images/Tablet/Homepage/Banner\ tablet.png);
+        height: 620px;
+    }
+}
