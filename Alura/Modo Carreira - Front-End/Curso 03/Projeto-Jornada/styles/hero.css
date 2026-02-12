@@ -1,0 +1,13 @@
+section#hero{
+    height: 400px;
+    width: 100%;
+}
+
+.hero__img{
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/Mobile/Homepage/Banner\ homepage.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
