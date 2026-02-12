@@ -1,0 +1,131 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 36px 48px;
+    height: 138px;
+    width: 100%;
+    background-color: var(--background-tertiary-color);
+}
+
+header img{
+    cursor: pointer;
+    transition: 200ms;
+}
+
+header img:hover{
+    scale: 1.1;
+}
+
+header a img:first-child{
+    height: 64px;
+    width: 68px;
+}
+
+header a img:last-child{
+    display: none;
+}
+
+header input[type="checkbox"], #idOverlay{
+    display: none;
+}
+
+header label img{
+    width: 36px;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: var(--background-quaternary-color);
+    box-shadow: -2px 0px 7px rgba(0, 0, 0, 0.411);
+    padding: 40px 30px;
+    height: 100vh;
+    max-width: 400px;
+    width: 50vw;
+    transition: 200ms;
+    z-index: 10;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    list-style: none;
+}
+
+header nav ul a{
+    color: #D9D9D9;
+    font-weight: var(--header-weight);
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: 150ms;
+}
+
+header nav ul a:hover{
+    color: var(--text-secondary-color);
+}
+
+/*---Media-Queries---*/
+
+@media screen and (min-width: 0) {
+    #idMenu:checked ~ nav{
+        right: 0;
+    }
+
+    #idMenu:checked ~ #idOverlay{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 9;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header label{
+        display: none;
+    }
+
+    header nav{
+        align-items: center;
+        justify-content: center;
+        position: static;
+        background-color: transparent;
+        padding: 0;
+        height: 100%;
+        min-width: max-content;
+    }
+
+    header nav ul{
+        flex-direction: row;
+        gap: 50px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header a img:first-child{
+        display: none;
+    }
+
+    header a img:last-child{
+        display: inline-block;
+        height: 64px;
+        width: 260px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    header{
+        justify-content: center;
+        gap: 658px;
+    }
+}
