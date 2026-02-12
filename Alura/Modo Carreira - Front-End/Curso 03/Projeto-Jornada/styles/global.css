@@ -6,6 +6,7 @@
 }
 
 *{
+    font-family: var(--text-font);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,6 +16,10 @@
     --background-primary-color: #FFFFFF;
     --background-secondary-color: #F5F5F5;
     --background-tertiary-color: #000000;
+    --background-quaternary-color: #222222;
+
+    --text-primary-color: #D9D9D9;
+    --text-secondary-color: #8C8C8C;
 
     --color-primary: #8F0101;
     --color-secondary: #B81515;
