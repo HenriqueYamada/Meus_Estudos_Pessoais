@@ -10,8 +10,11 @@
 @import url(footer.css);
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 @import url(mq.css);
 =======
+=======
+>>>>>>> Stashed changes
 body{
     height: 100vh;
 }
@@ -20,5 +23,9 @@ main{
     margin-top: 138px;
     height: 100%;
     width: 100%;
+<<<<<<< Updated upstream
+}
+>>>>>>> Stashed changes
+=======
 }
 >>>>>>> Stashed changes
