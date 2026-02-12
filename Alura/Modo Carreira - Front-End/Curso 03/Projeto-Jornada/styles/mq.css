@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+    #idMenu:checked ~ nav{
+        right: 0;
+    }
+
+    #idMenu:checked ~ #idOverlay{
+        display: block;
+    }
+}
