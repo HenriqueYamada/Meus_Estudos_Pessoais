@@ -20,3 +20,9 @@ section#hero{
         height: 620px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .hero__img{
+        background-image: url(../images/Desktop/Homepage/Banner.png);
+    }
+}
