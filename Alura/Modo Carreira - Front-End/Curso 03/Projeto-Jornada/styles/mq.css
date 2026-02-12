@@ -42,7 +42,7 @@
     }
 }
 
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: 1024px) {
     #header__images img:first-child{
         display: none;
     }

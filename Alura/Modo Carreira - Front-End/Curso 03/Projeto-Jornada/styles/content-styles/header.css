@@ -78,5 +78,5 @@ header ul a{
 }
 
 header ul a:hover{
-    color: var(--text-secondary-color-hover);
+    color: var(--primary-color);
 }
