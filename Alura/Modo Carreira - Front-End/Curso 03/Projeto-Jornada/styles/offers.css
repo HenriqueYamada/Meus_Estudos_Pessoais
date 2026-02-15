@@ -117,3 +117,17 @@ section#offers h2{
     padding: 16px;
     width: 100%;
 }
+
+/*---Media Queries---*/
+
+@media screen and (min-width: 768px) {
+    section#offers{
+        padding: 0 60px;
+    }
+
+    .offers__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+    }
+}
