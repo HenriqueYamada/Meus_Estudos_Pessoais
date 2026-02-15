@@ -3,7 +3,6 @@ section#hero{
     flex: 0;
     flex-direction: column;
     gap: 88px;
-    height: 100%;
     width: 100%;
 }
 

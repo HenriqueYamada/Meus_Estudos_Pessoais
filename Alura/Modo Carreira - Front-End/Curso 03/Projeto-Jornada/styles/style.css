@@ -10,5 +10,8 @@
 @import url(footer.css);
 
 main{
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
     height: 100vh;
 }

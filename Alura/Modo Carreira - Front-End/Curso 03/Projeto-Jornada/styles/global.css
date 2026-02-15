@@ -21,8 +21,8 @@
     --text-primary-color: #D9D9D9;
     --text-secondary-color: #8C8C8C;
 
-    --color-primary: #8F0101;
-    --color-secondary: #B81515;
+    --color-primary: #B81515;
+    --color-secondary: #8F0101;
 
     --title-h1-size: 48px;
     --title-h2-size: 40px;
@@ -36,8 +36,8 @@
     --text-body4-size: 32px;
 
     --header-weight: 700;
-    --title-wight: 500;
-    --text-weight: 400;
+    --title-weight: bold;
+    --text-weight: normal;
     --text-body2-wheight: bold;
     --text-body4-wheight: bold;
     --text-font: "Montserrat", sans-serif;

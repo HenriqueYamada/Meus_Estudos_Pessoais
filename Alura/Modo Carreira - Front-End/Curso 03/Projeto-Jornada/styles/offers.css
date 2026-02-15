@@ -1,0 +1,113 @@
+section#offers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+section#offers h2{
+    position: relative;
+    font-size: var(--title-h4-size);
+    font-weight: var(--title-weight);
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.title__underline{
+    background-color: var(--color-primary);
+    height: 4px;
+    width: 180px;
+}
+
+.offers__list{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 24px;
+}
+
+.offers__list img{
+    border-radius: 16px;
+}
+
+#offers__japan-card,
+#offers__san-andreas-card,
+#offers__paraiba-card,
+#offers__manaus-card
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 16px;
+    height: 288px;
+    width: 312px;
+}
+
+.offers__list__cards{
+    padding: 24px 16px;
+}
+
+#offers__japan-card{
+    background-image: url(../images/Mobile/Homepage/Japão.png);
+}
+
+#offers__san-andreas-card{
+    background-image: url(../images/Mobile/Homepage/San\ Andreas.png);
+}
+
+#offers__paraiba-card{
+    background-image: url(../images/Mobile/Homepage/Paraíba.png);
+}
+
+#offers__manaus-card{
+    background-image: url(../images/Mobile/Homepage/Manaus.png);
+}
+
+.offers__list__cards-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: var(--text-primary-color);
+    height: 100%;
+    width: 100%;
+}
+
+.offers__list__cards-content__titles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.offers__list__cards-content__titles span{
+    font-size: var(--text-body2-size);
+}
+
+.offers__list__cards-content__titles h3{
+    font-size: var(--title-h2-size);
+    font-weight: var(--title-weight);
+}
+
+.offers__list__cards-content_price{
+    font-size: var(--title-h3-size);
+    font-weight: var(--title-weight);
+}
+
+.offers__list__cards-content__button{
+    background-color: var(--color-primary);
+    color: var(--text-primary-color);
+    text-align: center;
+    font-size: var(--text-body2-size);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 16px;
+    width: 100%;
+}
