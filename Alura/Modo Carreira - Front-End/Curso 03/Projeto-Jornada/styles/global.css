@@ -24,8 +24,21 @@
     --color-primary: #8F0101;
     --color-secondary: #B81515;
 
+    --title-h1-size: 48px;
+    --title-h2-size: 40px;
+    --title-h3-size: 32px;
+    --title-h4-size: 28px;
+    --subtitle-size: 14px;
+
+    --text-body1-size: 16px;
+    --text-body2-size: 20px;
+    --text-body3-size: 24px;
+    --text-body4-size: 32px;
+
     --header-weight: 700;
     --title-wight: 500;
     --text-weight: 400;
+    --text-body2-wheight: bold;
+    --text-body4-wheight: bold;
     --text-font: "Montserrat", sans-serif;
 }
