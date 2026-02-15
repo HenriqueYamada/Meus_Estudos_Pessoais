@@ -1,5 +1,9 @@
+
 section#hero{
-    height: 400px;
+    display: flex;
+    flex: 0;
+    flex-direction: column;
+    gap: 88px;
     width: 100%;
 }
 
@@ -12,12 +16,18 @@ section#hero{
     background-size: cover;
 }
 
+section#hero > p{
+    font-size: var(--text-body2-size);
+    text-align: center;
+    line-height: 32px;
+    padding: 0 24px;
+}
+
 /*---Media-Queries*/
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 360px) {
     .hero__img{
         background-image: url(../images/Tablet/Homepage/Banner\ tablet.png);
-        height: 620px;
     }
 }
 
@@ -25,10 +35,22 @@ section#hero{
     .hero__img{
         background-image: url(../images/Desktop/Homepage/Banner.png);
     }
+
+    section#hero > p{
+        font-size: var(--text-body4-size);
+        line-height: 150%;
+        padding: 0 60px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .hero__img{
         background-image: url(../images/Desktop_Large/Homepage/Banner.png);
+    }
+    
+    section#hero > p{
+        font-size: var(--text-body4-size);
+        line-height: 150%;
+        padding: 0 120px;
     }
 }
