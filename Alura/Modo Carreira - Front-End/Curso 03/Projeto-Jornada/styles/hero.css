@@ -24,7 +24,7 @@ section#hero > p{
 
 /*---Media-Queries*/
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 360px) {
     .hero__img{
         background-image: url(../images/Tablet/Homepage/Banner\ tablet.png);
     }
