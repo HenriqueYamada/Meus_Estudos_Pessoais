@@ -1,0 +1,20 @@
+algoritmo "semnome"
+var
+      cont, maior_num, num, soma: INTEIRO
+inicio
+      cont <- 1
+      soma <- 0
+      maior_num <- 0
+      Enquanto (cont <= 5) faca
+         Escreva("Digite o ", cont, "° número: ")
+         Leia(num)
+         soma <- soma + num
+         Se (num > maior_num) entao
+            maior_num <- num
+         FimSe
+         cont <- cont + 1
+      FimEnquanto
+      
+      Escreval("A soma total foi de ", soma)
+      Escreval("E o maior número foi de ", maior_num)
+fimalgoritmo
