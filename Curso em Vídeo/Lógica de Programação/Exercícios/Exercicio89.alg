@@ -1,13 +1,15 @@
 algoritmo "semnome"
-//88) Crie um programa que melhore o procedimento Gerador() da questão anterior
-//para que mostre uma mensagem vário
-//Ex: Ao chamar Gerador("Aprendendo Portugol", 4) aparece:
-//+-------=======------+
-// Aprendendo Portugol
-// Aprendendo Portugol
-// Aprendendo Portugol
-// Aprendendo Portugol
-//+-------=======------+
+//89) Crie um programa que melhore o procedimento Gerador() da questão anterior
+//para que o programador possa escolher uma entre três bordas:
+// +-------=======------+ Borda 1
+// ~~~~~~~~:::::::~~~~~~~ Borda 2
+// <<<<<<<<------->>>>>>> Borda 3
+//Ex: Uma chamada válida seria Gerador("Portugol Studio", 3, 2)
+//~~~~~~~~:::::::~~~~~~~
+// Portugol Studio
+// Portugol Studio
+// Portugol Studio
+//~~~~~~~~:::::::~~~~~~~
 var
    qntd_vezes, resp: INTEIRO
    msg: CARACTERE
