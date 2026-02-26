@@ -16,23 +16,22 @@ inicio
            Leia(nome)
            Escreva("Sexo [H/M]: ")
            Leia(sexo)
-           Escreva("Salário: ")
+           Escreva("Salário: R$")
            Leia(salario)
            Escreval("============")
            vet_nome[i] <- nome
            vet_sexo[i] <- sexo
            vet_salario[i] <- salario
       FimPara
-      
-      Escreval("====================================")
-      Escreval("Dados das pessoas menores de idade: ")
+
+      Escreval("Dados das mulheres que ganham acima de R$5000: ")
       
       Para i <- 1 ate 3 faca
            Se (vet_sexo[i] = "M") entao
               Se (vet_salario[i] > 5000) entao
                  Escreval("==============================")
                  Escreval("Nome: ", vet_nome[i])
-                 Escreval("Salário: ", vet_salario[i])
+                 Escreval("Salário: R$", vet_salario[i])
               FimSe
            FimSe
       FimPara
