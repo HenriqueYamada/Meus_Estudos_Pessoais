@@ -8,6 +8,6 @@ inicio
       Escreva("Velocidade média do carro: ")
       Leia(velocidade)
       distancia <- tempo * velocidade
-      combustivel_gasto <- 12*distancia
+      combustivel_gasto <- distancia/12
       Escreva("Quantidade gasta do veículo: ", combustivel_gasto)
 fimalgoritmo
