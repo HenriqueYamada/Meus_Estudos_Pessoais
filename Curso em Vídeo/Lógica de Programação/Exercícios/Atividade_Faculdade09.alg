@@ -9,7 +9,6 @@ inicio
       mls <- garrafas * 500
       litros <- mls / 1000
       gasto <- pacotes * 12
-      Escreval("Pacotes consumidos: ", pacotes)
       Escreval("Litros de água consumidos: ", litros)
       Escreval("Gasto em água no evento: ", gasto)
 fimalgoritmo
