@@ -4,18 +4,24 @@ algoritmo "semnome"
 //exponenciação.
 //Ex: Potencia(5,2) vai calcular 5^2 = 25
 var
-   base, expo, potenc: REAL
+   comeco, fim, soma: INTEIRO
    
-Funcao Potencia(a, b: INTEIRO): REAL
+Funcao SuperSomador(a, b: INTEIRO): INTEIRO
+Var
+   cont, soma: INTEIRO
 Inicio
-      Retorne a^b
+      Para cont <- a ate b faca
+           soma <- soma + cont
+      FimPara
+
+      Retorne soma
 FimFuncao
 
 inicio
-      Escreva("Digite a base: ")
-      Leia(base)
-      Escreva("Digite a potência: ")
-      Leia(expo)
-      potenc <- Potencia(base, expo)
-      Escreval("A potência de ", base, "^", expo, " é de : ", potenc)
+      Escreva("Digite um número para começar: ")
+      Leia(comeco)
+      Escreva("Digite um número para terminar: ")
+      Leia(fim)
+      soma <- SuperSomador(comeco, fim)
+      Escreval("A soma do intervalo entre ", comeco, " e ", fim, " é de : ", soma)
 fimalgoritmo
