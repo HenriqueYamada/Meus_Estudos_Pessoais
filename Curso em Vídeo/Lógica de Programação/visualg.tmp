@@ -1,39 +1,29 @@
 algoritmo "semnome"
-//85) Faça um algoritmo que leia o nome, o sexo e o salário de 5 funcionários e
-//guarde esses dados em três vetores. No final, mostre uma listagem contendo
-//apenas os dados das funcionárias mulheres que ganham mais de R$5 mil.
-
+//98) Crie um programa que tenha uma função SuperSomador(), que vai receber dois
+//números como parâmetro e depois vai retornar a soma de todos os valores no
+//intervalo entre os valores recebidos.
+//Ex:
+//SuperSomador(1, 6) vai somar 1 + 2 + 3 + 4 + 5 + 6 e vai retornar 21
+//SuperSomador(15, 19) vai somar 15 + 16 + 17 + 18 + 19 e vai retornar 85
 var
-   salario: REAL
-   i, idade: INTEIRO
-   nome, sexo: CARACTERE
-   vet_nome: vetor[1..9] de CARACTERE
-   vet_sexo: vetor[1..9] de CARACTERE
-   vet_salario: vetor[1..9] de REAL
+   comeco, fim, soma: INTEIRO
+   
+Funcao SuperSomador(a, b: INTEIRO): INTEIRO
+Var
+   cont, soma: INTEIRO
+Inicio
+      Para cont <- a ate b faca
+           soma <- soma + cont
+      FimPara
+      
+      Retorne soma
+FimFuncao
+
 inicio
-      Para i <- 1 ate 3 faca
-           Escreva("Nome: ")
-           Leia(nome)
-           Escreva("Sexo [H/M]: ")
-           Leia(sexo)
-           Escreva("Salário: ")
-           Leia(salario)
-           Escreval("============")
-           vet_nome[i] <- nome
-           vet_sexo[i] <- sexo
-           vet_salario[i] <- salario
-      FimPara
-      
-      Escreval("====================================")
-      Escreval("Dados das pessoas menores de idade: ")
-      
-      Para i <- 1 ate 3 faca
-           Se (vet_sexo[i] = "M") entao
-              Se (vet_salario[i] > 5000) entao
-                 Escreval("==============================")
-                 Escreval("Nome: ", vet_nome[i])
-                 Escreval("Salário: ", vet_salario[i])
-              FimSe
-           FimSe
-      FimPara
+      Escreva("Digite um número para começar: ")
+      Leia(comeco)
+      Escreva("Digite um número para terminar: ")
+      Leia(fim)
+      soma <- SuperSomador(comeco, fim)
+      Escreval("A soma do intervalo entre, ", comeco, " e ", fim, " é de : ", soma)
 fimalgoritmo
