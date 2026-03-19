@@ -34,6 +34,14 @@ rl.question('1) Qual palavra usamos para criar uma função?\n (a) define \n (b)
                 }
             }
 
+            if (acertos == 3) {
+                console.log('Parabéns! Você acertou tudo!')
+            } else if (acertos == 2) {
+                console.log('Muito bom! continue assim!')
+            } else if (acertos == 1) {
+               console.log('Melhor estudar na próxima!')
+            } else {console.log('Continue praticando!')}
+
             rl.close()
         })
     })
