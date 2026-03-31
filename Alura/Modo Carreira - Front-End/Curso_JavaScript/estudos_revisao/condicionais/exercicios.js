@@ -23,3 +23,46 @@ if (salario < 4000) {
 }
 
 console.log('Novo salário: R$', salario)
+
+//Verificar se um ano é bissexto
+
+const ano = 1900
+
+if (((ano % 4 === 0) && (ano % 100 !== 0)) || (ano % 400 === 0)) {
+    console.log(ano, ' é um ano bissexto')
+} else {
+    console.log(ano, ' não é um ano bissexto')
+}
+
+//Verificar se um estudante receberá bônus na nota
+
+const nome= 'Roberta'
+const nota = 8
+const faltas = 3
+
+const recebeBonus = (nota >= 8) && (faltas <= 2)
+    ? `${nome} recebe nônus`
+    : `${nome} não recebe bônus`
+console.log(recebeBonus)
+
+//criar um fluxo que identifica o tipo de usuário e comunica de acordo
+
+const user = 'super premium'
+
+switch (user) {
+    case 'free':
+        console.log('Acesso limitado')
+        break;
+
+    case 'premium':
+        console.log('Acesso total')
+        break;
+
+    case 'super premium':
+        console.log('Acesso total e bônus')
+        break;
+
+    default:
+        console.log('Tipo de user desconhecido')
+        break;
+}
