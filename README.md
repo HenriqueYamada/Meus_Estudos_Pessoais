@@ -1,73 +1,108 @@
-# Estudos de Programação
+<h1 align="center">Estudos de Programação</h1>
 
-Este repositório reúne anotações, exercícios e pequenos experimentos desenvolvidos durante minha jornada de aprendizado em programação.
+<p align="center">
+  Repositório dedicado ao registro da minha evolução em programação, reunindo anotações, exercícios, testes de código e pequenos experimentos desenvolvidos ao longo dos meus estudos.
+</p>
 
-O objetivo é registrar minha evolução ao longo do tempo, organizando conceitos estudados, práticas realizadas e experimentações com diferentes tecnologias do desenvolvimento front-end.
-
----
-
-## Objetivo do repositório
-
-Este espaço funciona como um **registro contínuo de aprendizado**, onde organizo materiais e códigos utilizados durante meus estudos.
-
-Aqui estão reunidos:
-
-- Exercícios práticos
-- Testes de código
-- Exemplos de implementação
-- Anotações sobre conceitos importantes
-
-A proposta é documentar minha evolução como desenvolvedor e consolidar o aprendizado através da prática.
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/Status-Em%20andamento-blue?style=for-the-badge" alt="Status: Em andamento"/>
+</p>
 
 ---
 
-## Tecnologias e conceitos estudados
+## Índice
 
-Durante meus estudos neste repositório, trabalho com diferentes tecnologias e fundamentos da programação:
-
-- HTML5
-- CSS3
-- Flexbox
-- CSS Grid
-- JavaScript
-- Lógica de programação
-- Estruturação de páginas web
-- Responsividade
+- Sobre o repositório
+- O que está sendo estudado
+- Estrutura dos estudos
+- Plataformas de aprendizado
+- Evolução dos estudos
+- Objetivo a longo prazo
+- Autor
 
 ---
 
-## Início da jornada
+## Sobre o repositório
 
-Início dos estudos em programação: **Setembro de 2024**
+Este repositório funciona como um **registro contínuo da minha jornada de aprendizado em programação**.
 
-O aprendizado começou com fundamentos de **lógica de programação**, evoluindo gradualmente para o desenvolvimento front-end com HTML, CSS e posteriormente JavaScript.
+Aqui organizo conteúdos desenvolvidos durante meus estudos, incluindo exercícios, anotações, testes de código e pequenas implementações utilizadas para compreender melhor os conceitos estudados.
+
+A proposta não é concentrar projetos completos, mas documentar a prática diária e acompanhar minha evolução técnica ao longo do tempo.
+
+---
+
+## O que está sendo estudado
+
+Os principais conteúdos e tecnologias trabalhados neste repositório incluem:
+
+| Tecnologia / Conceito | Aplicação nos estudos |
+|---|---|
+| **HTML5** | Estruturação de páginas e compreensão dos elementos da web |
+| **CSS3** | Estilização, organização visual e construção de interfaces |
+| **Flexbox** | Alinhamento e distribuição de elementos |
+| **CSS Grid** | Construção e organização de layouts |
+| **JavaScript** | Fundamentos da linguagem e criação de comportamentos nas páginas |
+| **Lógica de programação** | Desenvolvimento do raciocínio lógico e resolução de problemas |
+| **Responsividade** | Adaptação de interfaces para diferentes tamanhos de tela |
+| **Estruturação de páginas web** | Organização de seções, componentes e conteúdos |
 
 ---
 
-## Plataformas de estudo
+## Estrutura dos estudos
 
-Grande parte dos conteúdos estudados neste repositório foram aprendidos através de cursos e materiais das seguintes plataformas:
+O repositório reúne diferentes tipos de materiais produzidos durante o processo de aprendizado:
 
-- Alura
-- Curso em Vídeo
-- Udemy
+- Exercícios práticos;
+- Testes e experimentações com código;
+- Exemplos de implementação;
+- Anotações sobre conceitos importantes;
+- Exercícios desenvolvidos durante cursos;
+- Práticas voltadas à fixação de novos conteúdos.
 
-Esses cursos forneceram a base teórica e prática para os exercícios e experimentos registrados aqui.
+Cada conteúdo representa uma etapa do processo de aprendizado e serve como referência para acompanhar minha evolução ao longo do tempo.
 
 ---
+
+## Plataformas de aprendizado
+
+Parte dos conteúdos presentes neste repositório foi estudada por meio de cursos, aulas e materiais disponibilizados em diferentes plataformas.
+
+Entre as principais estão:
+
+- **Alura**
+- **Curso em Vídeo**
+- **Udemy**
+
+Esses conteúdos contribuíram para a construção da minha base teórica e prática, servindo como ponto de partida para os exercícios e experimentações registrados neste repositório.
+
+---
+
+## Evolução dos estudos
+
+**Início dos estudos em programação:** Setembro de 2024
+
+Minha jornada começou com os fundamentos de **lógica de programação**, buscando desenvolver uma base sólida de raciocínio antes de avançar para tecnologias específicas.
+
+Posteriormente, passei a estudar desenvolvimento Front-End, iniciando com **HTML e CSS**, aprofundando conceitos como **Flexbox, CSS Grid e responsividade** e, em seguida, avançando para os fundamentos de **JavaScript**.
+
+Este repositório acompanha esse processo de forma contínua, permitindo observar a evolução dos meus conhecimentos e a forma como os exercícios se tornam mais estruturados conforme avanço nos estudos.
 
 ---
 
 ## Objetivo a longo prazo
 
-Este repositório continuará sendo atualizado conforme avanço nos estudos e aprofundo meus conhecimentos em desenvolvimento web.
+A intenção é manter este repositório em constante atualização conforme avanço na minha formação e aprofundo meus conhecimentos em desenvolvimento de software.
 
-A intenção é utilizar este espaço como um histórico público de aprendizado e evolução na área de tecnologia.
+Mais do que armazenar exercícios, este espaço funciona como um **histórico público de aprendizado**, permitindo registrar conceitos estudados, revisitar conteúdos importantes e acompanhar minha evolução técnica ao longo do tempo.
 
 ---
 
 ## Autor
 
-Desenvolvido por **Henrique Yuji Yamada**
+Organizado e mantido por **Henrique Yuji Yamada**
 
-Professor de inglês e estudante de desenvolvimento front-end, com foco em HTML, CSS e JavaScript.
+Este repositório acompanha meus estudos e minha evolução na área de desenvolvimento de software.
