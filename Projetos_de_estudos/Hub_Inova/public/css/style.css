@@ -1,0 +1,41 @@
+/* ═══════════════════════════════════════════
+   RESET & BASE
+═══════════════════════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:           #0d0f1e;
+  --bg2:          #12152b;
+  --glass:        rgba(28, 32, 58, 0.55);
+  --glass-border: rgba(255,255,255,0.08);
+  --glass-shadow: 0 8px 32px rgba(0,0,0,0.35);
+  --primary:      #7c5cfc;
+  --primary-dim:  rgba(124,92,252,0.18);
+  --accent:       #38bdf8;
+  --pink:         #f472b6;
+  --yellow:       #facc15;
+  --green:        #34d399;
+  --orange:       #fb923c;
+  --text:         #eef0f8;
+  --muted:        #6b7099;
+  --border:       rgba(255,255,255,0.08);
+  --radius:       16px;
+  --sidebar-w:    240px;
+  --header-h:     64px;
+  --font:         'Inter', sans-serif;
+  --transition:   0.25s ease;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+a { text-decoration: none; color: inherit; }
+button { font-family: var(--font); cursor: pointer; border: none; background: none; }
+input, textarea { font-family: var(--font); }
+img { display: block; max-width: 100%; }
