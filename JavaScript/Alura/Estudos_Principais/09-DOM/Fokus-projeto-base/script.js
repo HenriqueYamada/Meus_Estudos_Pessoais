@@ -5,9 +5,20 @@ const longoBt = document.querySelector('.app__card-button--longo');
 const banner = document.querySelector('.app__image');
 const titulo = document.querySelector('.app__title');
 const botoes = document.querySelectorAll('.app__card-button');
-const musicaFocoInput = documento.querySelector('#alternar-musica');
+const startPauseBt = document.querySelector('#start-pause');
+const musicaFocoInput = document.querySelector('#alternar-musica');
 const musica = new Audio('./sons/luna-rise-part-one.mp3');
+
+const beep = new Audio('./sons/beep.mp3')
+const play = new Audio('./sons/play.wav')
+const pause = new Audio('./sons/pause.mp3')
+
 musica.loop = true;
+
+let tempoDecorridoEmSegundos = 5;
+let intervaloId = null;
+
+
 
 musicaFocoInput.addEventListener('change', () => {
     if (musica.paused) {
@@ -67,4 +78,32 @@ function alterarContexto (contexto) {
 
             break;
     }
+}
+
+startPauseBt.addEventListener('click', iniciarOuPausar);
+
+function iniciarOuPausar() {
+    if (intervaloId) {
+        // pause.play();
+        zerar();
+        return;
+    }
+    play.play();
+    intervaloId = setInterval(contagemRegressiva, 1000);
+}
+
+const contagemRegressiva = () => {
+    if (tempoDecorridoEmSegundos <= 0) {
+        beep.play();
+        alert('Tempo esgotado!');
+        zerar();
+        return;
+    }
+    tempoDecorridoEmSegundos -= 1;
+    console.log('Temporizador: ' + tempoDecorridoEmSegundos);
+}
+
+function zerar() {
+    clearInterval(intervaloId);
+    intervaloId = null;
 }
