@@ -20,7 +20,7 @@ const tempoNaTela = document.querySelector('#timer');
 
 musica.loop = true;
 
-let tempoDecorridoEmSegundos = 1500;
+let tempoDecorridoEmSegundos = 10;
 let intervaloId = null;
 
 musicaFocoInput.addEventListener('change', () => {
@@ -106,6 +106,11 @@ const contagemRegressiva = () => {
     if (tempoDecorridoEmSegundos <= 0) {
         beep.play();
         alert('Tempo esgotado!');
+        const focoAtivo = html.getAttribute('data-contexto') == 'foco';
+        if (focoAtivo) {
+            const evento = new CustomEvent('FocoFinalizado');
+            document.dispatchEvent(evento)
+        }
         zerar();
         return;
     }
