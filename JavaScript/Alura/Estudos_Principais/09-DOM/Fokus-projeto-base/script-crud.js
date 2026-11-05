@@ -7,6 +7,10 @@ const ulTarefas = document.querySelector('.app__section-task-list');
 
 const tarefas = JSON.parse(localStorage.getItem('tarefas')) || [];
 
+function atualizarTarefa() {
+    localStorage.setItem('tarefas', JSON.stringify(tarefas));
+}
+
 function criarElementoTarefa(tarefa) {
     const li = document.createElement('li');
     li.classList.add('app__section-task-list-item');
@@ -27,6 +31,16 @@ function criarElementoTarefa(tarefa) {
 
     const botao = document.createElement('button');
     botao.classList.add('app_button-edit');
+
+    botao.onclick = () => {
+        const novaDescricao = prompt('Qual é o novo nome da tarefa? ');
+
+        if (novaDescricao) {
+            paragrafo.textContent = novaDescricao;
+            tarefa.descricao = novaDescricao;
+            atualizarTarefa();   
+        }
+    }
 
     const imagemBotao = document.createElement('img');
 
@@ -52,7 +66,7 @@ formAdicionarTarefa.addEventListener('submit', (evento) => {
     tarefas.push(tarefa);
     const elementoTarefa = criarElementoTarefa(tarefa);
     ulTarefas.append(elementoTarefa)
-    localStorage.setItem('tarefas', JSON.stringify(tarefas));
+    atualizarTarefa();
     textArea.value = '';
     formAdicionarTarefa.classList.add('hidden');
 });
@@ -77,3 +91,4 @@ tarefas.forEach(tarefa => {
 //  - .stringfy() - Transforma em string
 //  - .parse() - Transforma string em objeto/lista
 // .append() - colocar um elemnto dentro do outro
+// Debugger - Ferramenta que se vê em uso no devtools, para depurar o código (achar erro)
