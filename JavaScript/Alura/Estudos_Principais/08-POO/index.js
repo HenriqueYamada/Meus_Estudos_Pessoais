@@ -5,8 +5,11 @@ import Docente from "./Docente.js"
 const novoUser = new User("Juliana", "j@j.com", "2024-01-01")
 console.log(novoUser.exibirInfos());
 
-// novoUser.#nome = "Márcia"
-// console.log(novoUser.exibirInfos());
-// console.log(novoUser.#nome);f
+const dadosFicticios = User.exibirInfosGenericas('Cassio', 'c@c.com')
+console.log(dadosFicticios);
 
-// Encapsulamento: Quando não queremos que dados sejam alterados dentro de uma classe em outros arquivos/códigos, colocamos o "private" ou nesse caso "#" no começo das variáveis para dizer que elas não podem ser mudadas por fora
+// const novoAdmin = new Admin("Rodrigo", "r@r.com", "2024-01-01")
+// console.log(novoAdmin.exibirInfos());
+
+// const novaDocente = new Docente("Ana", "a@a.com", "2024-01-01")
+// console.log(novaDocente.exibirInfos());
