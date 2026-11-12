@@ -23,7 +23,49 @@ const api = {
             alert('Erro ao adicionar pensamentos;');
             throw error;
         }
-    }
+    },
+
+      async buscarPetPorId(id) {
+        try {
+            const response = await fetch(`http://localhost:3000/pets/${id}`);
+            return await response.json();
+        } catch (error) {
+            alert(`Erro: ${error.message}`);
+            throw error;
+        }
+    },
+
+    async editarPet(pet) {
+        try {
+        const response = await fetch(`http://localhost:3000/pets/${pet.id}`, {
+            method: "PUT",
+            headers: {
+            "Content-Type": "application/json",
+            },
+            body: JSON.stringify(pet),
+        });
+        return await response.json();
+        } catch (error) {
+        alert(`Erro: ${error.message}`);
+        throw error;
+        }
+    },
+
+    async Pet(pet) {
+        try {
+        const response = await fetch(`http://localhost:3000/pets/${pet.id}`, {
+            method: "PUT",
+            headers: {
+            "Content-Type": "application/json",
+            },
+            body: JSON.stringify(pet),
+        });
+        return await response.json();
+        } catch (error) {
+        alert(`Erro: ${error.message}`);
+        throw error;
+        }
+    },
 }
 
 export default api;

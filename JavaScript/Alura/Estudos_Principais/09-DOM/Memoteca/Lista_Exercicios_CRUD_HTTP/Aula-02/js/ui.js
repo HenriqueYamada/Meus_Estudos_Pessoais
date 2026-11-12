@@ -35,9 +35,15 @@ const ui = {
         pensamentoAutoria.textContent = pensamento.autoria;
         pensamentoAutoria.classList.add("pensamento-autoria");
 
+        const botaoEditar = document.createElement("button");
+        botaoEditar.classList.add("botao-editar");
+        botaoEditar.textContent = "Editar";
+        botaoEditar.onclick = () => ui.preencherFormulario(pet.id);
+
         li.appendChild(iconeAspas);
         li.appendChild(pensamentoConteudo);
         li.appendChild(pensamentoAutoria);
+        li.appendChild(botaoEditar);
         listaPensamentos.appendChild(li);
     },
 

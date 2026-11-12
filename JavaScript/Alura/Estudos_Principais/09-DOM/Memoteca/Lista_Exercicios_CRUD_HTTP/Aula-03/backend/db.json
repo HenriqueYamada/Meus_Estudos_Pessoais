@@ -1,0 +1,64 @@
+{
+  "pets": [
+    {
+      "id": "1a2b",
+      "especie": "felina",
+      "nome": "Mimi",
+      "raca": "Siamês"
+    },
+    {
+      "id": "2b3c",
+      "especie": "canina",
+      "nome": "Rex",
+      "raca": "Labrador"
+    },
+    {
+      "id": "3c4d",
+      "especie": "felina",
+      "nome": "Luna",
+      "raca": "Persa"
+    },
+    {
+      "id": "4d5e",
+      "especie": "canina",
+      "nome": "Max",
+      "raca": "Beagle"
+    },
+    {
+      "id": "5e6f",
+      "especie": "felina",
+      "nome": "Simba",
+      "raca": "Maine Coon"
+    },
+    {
+      "id": "6f7g",
+      "especie": "canina",
+      "nome": "Bella",
+      "raca": "Bulldog"
+    },
+    {
+      "id": "7g8h",
+      "especie": "felina",
+      "nome": "Oscar",
+      "raca": "Bengal"
+    },
+    {
+      "id": "8h9i",
+      "especie": "canina",
+      "nome": "Lola",
+      "raca": "Poodle"
+    },
+    {
+      "id": "9i0j",
+      "especie": "felina",
+      "nome": "Nina",
+      "raca": "Sphynx"
+    },
+    {
+      "id": "0j1k",
+      "especie": "canina",
+      "nome": "Charlie",
+      "raca": "Golden Retriever"
+    }
+  ]
+}

@@ -1,24 +1,29 @@
 import ui from "./ui.js"
 import api from "./api.js"
 
-document.addEventListener('DOMContentLoaded', () => {
-    ui.renderizarPensamentos();
+document.addEventListener("DOMContentLoaded", () => {
+  ui.renderizarPets();
 
-    const formularioPensamento = document.getElementById("pensamento-form");
-    formularioPensamento.addEventListener("submit", manipularSubmissaoForm);
+  const formularioPet = document.getElementById("pet-form");
+  formularioPet.addEventListener("submit", manipularSubmissaoFormulario);
 });
 
-async function manipularSubmissaoForm(event) {
-    event.preventDefault();
-    const id = document.getElementById("pensamento-id").value
-    const conteudo = document.getElementById("pensamento-conteudo").value
-    const autoria = document.getElementById("pensamento-autoria").value
+async function manipularSubmissaoFormulario(event) {
+  event.preventDefault();
+  const id = document.getElementById("pet-id").value;
+  const nome = document.getElementById("pet-nome").value;
+  const especie = document.getElementById("pet-especie").value;
+  const raca = document.getElementById("pet-raca").value;
 
-    try {
-        await api.adicionarPensamento( { conteudo, autoria } );
-        ui.renderizarPensamentos()
-    } catch (error) {
-        alert("Erro ao adicionar pensamento");
-        return error;
+  try {
+    if (id) {
+      await api.editarPet({ id, nome, especie, raca });
+    } else {
+      await api.salvarPet({ nome, especie, raca });
     }
+    ui.renderizarPets();
+  } catch (error) {
+    console.error("Erro ao salvar pet:", error);
+    alert("Erro ao salvar pet. Tente novamente mais tarde.");
+  }
 }
